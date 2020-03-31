@@ -25,3 +25,4 @@ metadata:
   - port: 80
   selector:
   app: a1
+

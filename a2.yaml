@@ -11,9 +11,11 @@ spec:
   spec:
    containers:
    - name: a2
-     image: #{image}
+     image: #{image}#:#{tag}#
      ports:
      - containerPort: 80
+   imagePullSecrets:
+     - name: dockerhub
 ---
 apiVersion: v1
 kind: Service

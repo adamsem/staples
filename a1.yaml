@@ -11,7 +11,7 @@ spec:
   spec:
    containers:
    - name: a1
-     image: $(ACR.FullName)/$(ACR.ImageName)
+     image: #{image}
      ports:
      - containerPort: 80
 ---
